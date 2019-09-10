@@ -1,0 +1,9 @@
+{
+    "description": "STM32Duino tools",
+    "name": "tool-stm32duino",
+    "system": [
+        "linux_x86_64"
+    ],
+    "url": "https://github.com/rogerclarkmelbourne/Arduino_STM32",
+    "version": "1.0.1"
+}
