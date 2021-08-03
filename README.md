@@ -1,16 +1,15 @@
-﻿# [Toolchain S3](https://github.com/OS-Q/S3)
-[![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-#### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+﻿# [P215](https://github.com/OS-Q/P215)
 
-[EDGE-Q](https://github.com/OS-Q/EDGE-Q) -> Q[4] -> M[12] -> W[52] -> D[365] -> H[24] -> N[60] -> S[60]
+[![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-### [Toolchain描述](https://github.com/OS-Q/S3/wiki) 
+[![Build Status](https://github.com/OS-Q/P215/workflows/CI/badge.svg)](https://github.com/OS-Q/P215/actions/workflows/CI.yml)
 
-[Toolchain S3](https://github.com/OS-Q/S3) 用于支持H1平台烧录arduino固件
+### [简介](https://github.com/OS-Q/P215/wiki)
 
-### [关联资源](https://github.com/OS-Q/)
+[P215](https://github.com/OS-Q/P215) 用于 [STM32G4](https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html) 系列开发
 
-*  [ Platform : H1](https://github.com/OS-Q/H1) 
+| 目标平台 | arduino | cmsis | libopencm3 | mbedos | stm32 hal | zephyr |
+| ------- | ------- | ------ | --------- | --------- | ---------- | ---------- |
+| [STM32G474RE](https://github.com/SoCXin/STM32G474RE) | √  | √  |  √ | √   |   √ |  √  |
 
-### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/S3)
-####  2019-9-10
+#### [源圈OS-Q](http://www.OS-Q.com)
