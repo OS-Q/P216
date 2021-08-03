@@ -24,14 +24,6 @@ class P216Platform(PlatformBase):
                     "script"
                 ] = "builder/frameworks/arduino/mbed-core/arduino-core-mbed.py"
                 self.packages["framework-arduinoststm32"]["optional"] = True
-            elif build_core == "maple":
-                self.frameworks["arduino"]["package"] = "framework-arduinoststm32-maple"
-                self.packages["framework-arduinoststm32-maple"]["optional"] = False
-                self.packages["framework-arduinoststm32"]["optional"] = True
-            elif build_core == "stm32l0":
-                self.frameworks["arduino"]["package"] = "framework-arduinoststm32l0"
-                self.packages["framework-arduinoststm32l0"]["optional"] = False
-                self.packages["framework-arduinoststm32"]["optional"] = True
             else:
                 self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90201.0"
                 self.packages["framework-cmsis"]["version"] = "~2.50700.0"
@@ -64,13 +56,6 @@ class P216Platform(PlatformBase):
         if variables.get("upload_protocol", default_protocol) == "dfu":
             self.packages["tool-dfuutil"]["optional"] = False
 
-        if board == "mxchip_az3166":
-            self.frameworks["arduino"][
-                "package"] = "framework-arduinostm32mxchip"
-            self.frameworks["arduino"][
-                "script"] = "builder/frameworks/arduino/mxchip.py"
-            self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.60301.0"
-
         if "zephyr" in variables.get("pioframework", []):
             for p in self.packages:
                 if p in ("tool-cmake", "tool-dtc", "tool-ninja"):
@@ -94,7 +79,7 @@ class P216Platform(PlatformBase):
             del self.packages[jlink_pkgname]
 
         return PlatformBase.configure_default_packages(self, variables,
-                                                       targets)
+                                                    targets)
 
     def get_boards(self, id_=None):
         result = PlatformBase.get_boards(self, id_)

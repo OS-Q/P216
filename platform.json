@@ -97,12 +97,6 @@
       "owner": "platformio",
       "version": "~1.1.1"
     },
-    "framework-spl": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.10201.0"
-    },
     "framework-libopencm3": {
       "type": "framework",
       "optional": true,
