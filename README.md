@@ -8,8 +8,9 @@
 
 [P216](https://github.com/OS-Q/P216) 用于 [STM32G4](https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html) 系列开发
 
-| 目标平台 | arduino | cmsis | libopencm3 | mbedos | stm32 hal | zephyr |
+| 目标平台 | arduino | cmsis | libopencm3 | mbed | stm32 hal | zephyr |
 | ------- | ------- | ------ | --------- | --------- | ---------- | ---------- |
-| [STM32G474RE](https://github.com/SoCXin/STM32G474RE) | √  | √  |  √ | √   |   √ |  √  |
+| [STM32G474](https://docs.soc.xin/STM32G474) |  √  |  √  |  √  |  √  |  √  |  √  |
+| [STM32G431](https://docs.soc.xin/STM32G431) |  √  |  √  |  √  |    |  √  |  √  |
 
 #### [源圈OS-Q](http://www.OS-Q.com)
